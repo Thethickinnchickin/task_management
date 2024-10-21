@@ -153,3 +153,6 @@ def get_task_by_id(task_id):
         return jsonify({"message": "Unauthorized to view this task"}), 403
 
     return jsonify(task.to_dict()), 200
+
+def handler(event, context):
+    return app(event, context)
