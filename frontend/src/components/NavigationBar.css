@@ -1,0 +1,40 @@
+.navbar {
+    background-color: #007bff; /* Blue background color */
+    padding: 10px 20px; /* Padding for the navbar */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Space between brand and links */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-size: 24px; /* Brand font size */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center; /* Center links vertically */
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Space between links */
+  }
+  
+  .navbar-button {
+    background-color: transparent; /* No background */
+    border: none; /* No border */
+    color: white; /* White text */
+    margin-left: 20px; /* Space before logout button */
+    cursor: pointer; /* Pointer on hover */
+  }
+  
+  .navbar-button:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

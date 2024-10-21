@@ -4,9 +4,12 @@ from .auth import auth_routes
 from .models import db
 from flask_swagger_ui import get_swaggerui_blueprint
 from flask_migrate import Migrate
+from flask_cors import CORS
 
 def create_app():
     app = Flask(__name__)
+
+    CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
     # Configure the app (e.g., SQLAlchemy connection settings)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your-database.db'  # Update this to your actual DB URI
