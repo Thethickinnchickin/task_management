@@ -20,8 +20,7 @@ const LoginPage = () => {
 
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
-      console.log("GFAFASDFD")
-      const response = await axios.post(`https://astonishing-patience-production.up.railway.app/auth/login`, values);
+      const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/auth/login`, values);
       localStorage.setItem('token', response.data.token);
       navigate('/dashboard');
     } catch (error) {
