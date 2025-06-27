@@ -9,7 +9,7 @@ from flask_cors import CORS
 def create_app():
     app = Flask(__name__)
 
-    CORS(app, resources={r"/*": {"origins": "https://task-management-b5yt.vercel.app"}})
+    CORS(app, resources={r"/*": {"origins": "https://task-management-gamma-rose.vercel.app"}})
 
     # Configure the app (e.g., SQLAlchemy connection settings)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:EdvDvuYJPkVnDeJSIdxVZUtZjdYdiMka@yamanote.proxy.rlwy.net:46156/railway'
