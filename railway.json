@@ -1,6 +1,9 @@
 {
   "build": {
     "builder": "NIXPACKS",
+    "languages": {
+      "python": "3.11"
+    },
     "buildCommand": "pip install -r backend/requirements.txt"
   },
   "deploy": {
