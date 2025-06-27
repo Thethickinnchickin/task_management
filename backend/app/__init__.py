@@ -12,7 +12,8 @@ def create_app():
     CORS(app, resources={r"/*": {"origins": "https://task-management-b5yt.vercel.app"}})
 
     # Configure the app (e.g., SQLAlchemy connection settings)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your-database.db'  # Update this to your actual DB URI
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:EdvDvuYJPkVnDeJSIdxVZUtZjdYdiMka@yamanote.proxy.rlwy.net:46156/railway'
+    # 'sqlite:///your-database.db'  # Update this to your actual DB URI
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     # Initialize the database with the Flask app
